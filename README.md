@@ -2,7 +2,9 @@
 Scripts that can automate different work flows or bulk actions needed within AzureAD and Azure Resources
 
 <b>Security group Automation</b>
+  <br>
   A script that will create 3 security groups, per management Group, and Subscription the operating user has access to.
+  <br>
   <ul>
     <li>the 3 groups created per resource will have Owner, Contributor, Reader RBAC roles, have be named accordingly.</li>
     <li>Recommeneded to Run as a Global Admin with the Owner RBAC role on the Tenant Root level.</li>
