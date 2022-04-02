@@ -1,4 +1,4 @@
-# Instant Azure VM v.3 | 3/4/22
+# Instant Linux VM v.3 | 3/4/22
 # By James Immer | Associate Consulting Engineer | CDW 
 
 # Parameters
@@ -8,7 +8,7 @@ $tnt_id = '<Tenant-ID>'
 $app_id = '<Application-(Client)-ID>'
 $certTP = '<Certificate Thumbprint>'
 # [Resource] (Will look for this RG, not create!)
-$rg_name = 'Milestone-Challenege-PYPS'
+$rg_name = '<Target RG Name>'
 
 # [VM Config]
 $VM_Image_PubID = 'canonical'
