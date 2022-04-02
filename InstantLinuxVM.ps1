@@ -14,8 +14,8 @@ $rg_name = '<Target RG Name>'
 $VM_Image_PubID = 'canonical'
 $VM_Image_PRODID = '0001-com-ubuntu-server-focal'
 $vm_image_sku = '20_04-lts-gen2'
-$Num_cores = 2
-$Num_Mem = 2048
+$Num_cores = <int>
+$Num_Mem = <int MB>
 
 # [SSH Config]
 $path_to_ssh = '~\.ssh\'
