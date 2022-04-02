@@ -1,7 +1,7 @@
 # AutoAzure
 Scripts that can automate different work flows or bulk actions needed within AzureAD and Azure Resources
 
-<b>Instant Linux VM</b>
+<b>Instant Linux VM 3/4/2022</b>
   <br>
   Deploys an Azure Virtual Machine to a given Resource Group, in a Subcription.
   <br>
