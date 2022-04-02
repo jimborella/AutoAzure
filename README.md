@@ -1,14 +1,15 @@
 # AutoAzure
 Scripts that can automate different work flows or bulk actions needed within AzureAD and Azure Resources
 
-<b>Security group Automation</b>
+<b>Instant Linux VM</b>
   <br>
-  A script that will create 3 security groups, per management Group, and Subscription the operating user has access to.
+  Deploys an Azure Virtual Machine to a given Resource Group, in a Subcription.
   <br>
   <ul>
-    <li>the 3 groups created per resource will have Owner, Contributor, Reader RBAC roles, have be named accordingly.</li>
-    <li>Recommeneded to Run as a Global Admin with the Owner RBAC role on the Tenant Root level.</li>
-    <li>Must run in PowerShell for interactive signon, could be modified to run non-interactively with an App registration, and Client Secret/Certificate.</li>
-    <li>Naming scheme is SG-< management Group ID / Subsciption Display Name >-< RBAC role > EX: SG-TenantRoot-Owner.</li>
-    <li>The Root Management group, will be renamed "TenantRoot" as the deafault name is the tenant ID.</li>
+    <li>This script was designed to be used with an App Regstration in Azure AD, acting as a Service Principal.</li>
+    <li>Automaticly SSH's into the VM, when VM is provisioned and booted with a Public IP. Keys are saved in the current user's /.ssh/ folder.</li>
+    <li>VM image can be configured in the Script's Parameters.</li>
+    <li>Automatically finds a VM size in the RG's region. Size choosen will be the closest to the provided charateristics (vCPUs, RAM Amount)</li>
+    <li>Script only supports Linux VMs</li>
+    <li>Network resources (vNET, SubNTs, Etc) are auto-generated, and can't be configured.</li>
   </ul>
