@@ -20,14 +20,12 @@ Scripts that can automate different work flows or bulk actions needed within Azu
   <br>
   <ul>
     <li>This Sctipt Evaluates for:</li>
-    <li>
       <ul>
         <li>Recent Sign-ins</li>
         <li>If Account is Enabled</li>
         <li>If Account has Licenses</li>
         <li>If Account has a MailBox</li>
       </ul>
-    </li>
     <li>Recommends Account Removal based on above criteria.</li>
     <li>Currently only analyzes a single tenant, per run.</li>
     <li>Configurable .CSV file output directory.</li>
